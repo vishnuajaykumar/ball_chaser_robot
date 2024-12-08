@@ -1,0 +1,11 @@
+# Exclude build and development artifacts
+/build/
+*/build/
+*/devel/
+*.catkin_workspace
+/log/
+*.swp
+
+# Exclude the simple_arm package
+src/simple_arm/
+
