@@ -1,10 +1,10 @@
-# 🗺️ AMCL Localization Project - Robot Navigation with Monte Carlo Localization
+# 🗺️ AMCL Localization Project
 
-Welcome to the AMCL Localization Project, where robots navigate and localize themselves in a pre-defined map using Adaptive Monte Carlo Localization (AMCL) in ROS 1.
+Welcome to the AMCL Localization Project, where robots localize themselves in a pre-defined map using Adaptive Monte Carlo Localization (AMCL).
 
 # 📦 Project Overview
 
-This project demonstrates how to localize a robot in a known environment using sensor data and odometry with the AMCL package. The robot is simulated in Gazebo and uses laser sensors for localization and navigation.
+This project demonstrates how to localize a robot in a known environment using sensor data and odometry with the AMCL package. The robot is simulated in Gazebo and uses sensors for localization and navigation.
 
 # 🛠️ Prerequisites
 
