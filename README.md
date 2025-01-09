@@ -29,7 +29,7 @@ sudo apt install ros-noetic-map-server \
 # 🏗️ How to Clone and Run
 
 
-git clone https://github.com/vishnuajaykumar/amcl_robot_project.git
+git clone https://github.com/vishnuajaykumar/Robot_Localization_AMCL.git
 cd amcl_robot_project
 
 # Build the Workspace
@@ -71,6 +71,8 @@ bamcl_robot_project/
 🗺️ Map Server
 
 The Map Server node loads a pre-defined map and provides it for localization.
+For Defining yourown custom Map : Use this package 
+git clone https://github.com/udacity/pgm_map_creator.git
 
 🧠 AMCL Localization
 
@@ -83,3 +85,4 @@ Odometry to refine the pose estimate.
 Dynamically adjusts the number of particles to balance accuracy and computation time.
 
 
+Downlaod Mapping 
