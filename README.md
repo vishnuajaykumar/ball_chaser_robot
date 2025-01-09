@@ -4,22 +4,19 @@ Welcome to the AMCL Localization Project, where robots localize themselves in a 
 
 # 📦 Project Overview
 
-This project demonstrates how to localize a robot in a known environment using sensor data and odometry with the AMCL package. The robot is simulated in Gazebo and uses sensors for localization and navigation.
+This project demonstrates how to localize a robot in a known environment using sensor data and odometry with the AMCL package. The robot is simulated in Gazebo and uses sensors for localization.
 
 # 🛠️ Prerequisites
 
 Required Tools
 
-ROS 1 (tested on Noetic 🐢)
-
+ROS 1 
 Gazebo (default with ROS Noetic)
 
 catkin tools: Install with:
-
 sudo apt install python3-catkin-tools
 
 Additional ROS packages:
-
 sudo apt install ros-noetic-map-server \
                  ros-noetic-amcl \
                  ros-noetic-move-base \
@@ -28,7 +25,6 @@ sudo apt install ros-noetic-map-server \
 
 # 🏗️ How to Clone and Run
 
-
 git clone https://github.com/vishnuajaykumar/Robot_Localization_AMCL.git
 cd amcl_robot_project
 
@@ -36,8 +32,6 @@ cd amcl_robot_project
 
 catkin_make
 source devel/setup.bash
-
-Launch the AMCL Localization
 
 # Launch the localization stack with the AMCL node:
 
@@ -66,7 +60,7 @@ bamcl_robot_project/
 
 ---
 
-🧠 How It Works
+# 🧠 How It Works
 
 🗺️ Map Server
 
@@ -74,15 +68,10 @@ The Map Server node loads a pre-defined map and provides it for localization.
 For Defining yourown custom Map : Use this package 
 git clone https://github.com/udacity/pgm_map_creator.git
 
-🧠 AMCL Localization
+# 🧠 AMCL Localization
 
 Adaptive Monte Carlo Localization uses:
 
 Laser scan data to estimate the robot’s position relative to the map.
-
 Odometry to refine the pose estimate.
-
-Dynamically adjusts the number of particles to balance accuracy and computation time.
-
-
-Downlaod Mapping 
+Dynamically adjusts the number of particles.
